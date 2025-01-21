@@ -5,6 +5,5 @@ from django.http import HttpResponse
 def my_blog(request):
     return HttpResponse("Hello, Blog!")
 
-def home(request):
+def index(request):
     return HttpResponse("Welcome to the Home Page!")
-
