@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import path, include
-from blog.views import my_blog, index
+
 
 
 
@@ -25,8 +25,8 @@ from blog.views import my_blog, index
 
 
 urlpatterns = [
-    path('', index, name='index'),
+    
     path('admin/', admin.site.urls),
-    path('blog/', my_blog, name='blog'),
+    path('', include("blog.urls"), name='blog-urls'),
     
 ]
