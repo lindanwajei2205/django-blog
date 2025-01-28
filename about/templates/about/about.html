@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-4 text-center">
+      <img src="{% static 'images/nobody.jpg' %}" width="75%" />
+    </div>
+    <div class="col-8">
+      <!-- Title goes between these h2 tags -->
+      <h2>About Linda</h2>
+      <!-- Content goes directly underneath this -->
+      <p>Junior Full Stack Developer with hands-on experience in JavaScript, Python, HTML, CSS, and building web applications. 
+      Backed by a background in customer service/complaint management, excelling at solving complex issues and delivering results. 
+      Passionate about using a mix of technical skills and strong communication to create innovative software solutions and drive team success. 
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col text-right">
+      <!-- Updated on field goes in here -->
+
+      <p class="text-end"><em>Updated on: Jan 27, 2025, 10:57am.</em></p>
+    </div>
+  </div>
+</div>
+{% endblock content %}

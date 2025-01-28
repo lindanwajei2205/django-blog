@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Post
-from .models import About
+
 
 
 # Create your views here.
@@ -34,8 +34,3 @@ def post_detail(request, slug):
         "blog/post_detail.html",
         {"post": post},
     )   
-
-
-def about_view(request):
-    about = About.objects.first()
-    return render(request, 'about/about.html', {'about': about})

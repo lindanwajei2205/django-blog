@@ -1,7 +1,5 @@
 from django.contrib import admin
-from .models import Post
 from .models import Post, Comment
-from .models import About
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -20,4 +18,3 @@ class PostAdmin(SummernoteModelAdmin):
 
 admin.site.register(Comment)
 
-admin.site.register(About)

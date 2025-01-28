@@ -39,14 +39,4 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
-    
-
-class About(models.Model):
-    title = models.CharField(max_length=255)
-    content = models.TextField()
-    updated_on = updated_on = models.DateTimeField(auto_now=True)
-    
-
-    def __str__(self):
-        return self.title
-
+   
