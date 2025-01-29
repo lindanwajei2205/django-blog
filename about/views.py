@@ -13,7 +13,8 @@ def about_me(request):
             collaborate_form.save()
             messages.add_message(request, messages.SUCCESS, "Collaboration request received! I endeavour to respond within 2 working days.")
     """
-    Renders the About page
+    Renders the most recent information on the website author and allows user collaboration requests.
+    Displays an individual instance of :model: `about.About`.
     """
     about = About.objects.all().order_by('-updated_on').first()
     collaborate_form = CollaborateForm()
